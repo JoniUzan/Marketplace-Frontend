@@ -4,9 +4,10 @@ import ProductList from "../components/ProductList";
 import { useLocation, useSearchParams } from "react-router-dom";
 
 import SearchBar from "../components/SearchBar";
-import { ArrowLeft, ArrowRight, Maximize } from "lucide-react";
 import PagesButton from "../components/PagesButton";
 import PriceRangeSlider from "../components/PriceRangeSlider";
+
+import FilterButton from "../components/FilterButton";
 
 export const productUrl = `http://localhost:3000/api/products`;
 
@@ -86,8 +87,9 @@ function ProductsPage() {
 
   return (
     <>
-      <div className="bg-primery-beige">
+      <div className="bg-primery-blue">
         <h1 className="mx-10 text-4xl">Products</h1>
+        
         <PriceRangeSlider
           searchParams={searchParams}
           setSearchParams={setSearchParams}
@@ -100,6 +102,7 @@ function ProductsPage() {
             maxPrice={maxPrice}
           />
         </div>
+        
         <PagesButton handlePage={handlePage} page={page} />
         <ProductList products={products} />
         <PagesButton handlePage={handlePage} page={page} />

@@ -13,10 +13,6 @@ import SighUpPage from "./Pages/SighUpPage";
 
 const links = [
   {
-    label: "Home",
-    href: "",
-  },
-  {
     label: "products",
     href: "products",
   },
