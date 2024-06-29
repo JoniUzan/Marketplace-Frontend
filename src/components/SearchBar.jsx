@@ -3,7 +3,7 @@ import Input from "./Input";
 
 function SearchBar({ name, handleFilter }) {
   return (
-    <div className="flex justify-center bg-primery-green p-5 rounded-3xl w-2/3  gap-5 mx-8 mt-8">
+    <div >
       <Input
         value={name}
         handler={handleFilter}

@@ -34,7 +34,7 @@ function Home() {
       }
     };
     dataFetching();
-  }, [useLocation, searchParams]);
+  }, []);
   return (
     <div className="min-h-screen bg-primery-blue">
       <header className="bg-white shadow">

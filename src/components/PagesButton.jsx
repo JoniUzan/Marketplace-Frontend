@@ -3,7 +3,7 @@ import React from "react";
 
 function PagesButton({ handlePage, page }) {
   return (
-    <div className="flex gap-5 justify-center">
+    <div className="flex gap-5 justify-center my-8">
       <button onClick={() => handlePage("prev")}>
         <ArrowLeft />
       </button>
